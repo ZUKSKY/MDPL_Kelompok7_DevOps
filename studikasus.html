@@ -375,12 +375,11 @@
 
         <br>
 
-        <!--Desain Perancangan Tampilan User Interface (UI)-->
-        <h5><b>3.5.5	Desain Perancangan Tampilan User Interface (UI)</b></h5>  
+         <!--Desain Perancangan Tampilan User Interface (UI)-->
+        <h5><b>3.2.5	Desain Perancangan Tampilan User Interface (UI)</b></h5>  
         <p>Berikut adalah tampilan user interface untuk desain sistem informasi persediaan barang berbasis web: <br><br>
           <!--Home-->
-          1.	Desain Tampilan Halaman Login<br>
-          Halaman login merupakan halaman yang digunakan untuk login ke sistem, pada saat login terdapat 3 level user yang setiap level akses dan tampilan halaman berbeda. Jika username dan password di ketik dengan benar maka akan masuk kedalam sistem.
+          1.	Desain Tampilan Halaman Login
         </p>
         <div class="col-md-8 mb-2">
           <img src="UI/Login.png"class="img-fluid mb-4" >
@@ -389,16 +388,14 @@
         <!--Desain Admin-->
         <p>2.	Tampilan Halaman Admin<br>
           <!--Home - Admin-->
-          A.	Desain Tampilan Halaman Home atau Dashboard Admin<br>
-          Halaman Home atau Dashboard admin gudang merupakan halaman yang muncul ketika level user admin sukses masuk kedalam sistem. Halaman ini menampilkan menu dan informasi barang yang dibutuhkan level user admin, Berikut adalah halaman utama admin pada Gambar dibawah ini :
+          A.	Desain Tampilan Halaman Home atau Dashboard Admin
         </p>
         <div class="col-md-8 mb-2">
           <img src="UI/Home - Admin.png"class="img-fluid mb-4" >
         </div>
 
         <!--Desain Admin Supplier-->
-        <p>B.	Desain Tampilan Halaman Supplier Admin<br>
-          Halaman ini berfungsi mengelola data supplier. Berikut adalah halaman supplier admin pada Gambar dibawah ini :
+        <p>B.	Desain Tampilan Halaman Supplier Admin
         </p>
         <div class="col-md-8 mb-2">
           <img src="UI/Menu-Supplier.png"class="img-fluid mb-4" >
@@ -406,7 +403,7 @@
 
          <!--Desain Admin Master Barang --->
          <p>C.	Desain Tampilan Halaman Menu Master Barang Admin<br>
-          Pada Menu Master Barang terdapat 3 Halaman yaitu Data Barang, Jenis Barang, dan Satuan Barang. Halaman tersebut untuk mengelola data-data barang produk kaos termasuk pada satuan barang dan jenis barang. Pada bagian halaman barang Ketika di klik satu produk barang maka akan menampilkan detail data barang. Berikut adalah  3 halaman menu master barang admin dan juga detail barang pada Gambar dibawah ini :
+          Berikut adalah  3 desain halaman menu master barang admin dan juga detail barang pada Gambar dibawah ini :
         </p>
         <p>Desain Tampilan Halaman Menu Barang</p>
         <div class="col-md-8 mb-2">
@@ -429,7 +426,7 @@
 
         <!--Desain Admin Menu Transaksi-->
         <p>D.	Desain Tampilan Halaman  Menu Transaksi Admin<br>
-          Pada Menu Transaksi terdapat 2 Halaman yaitu Barang Masuk dan Barang Keluar. Halaman ini untuk mengelola data barang masuk dan keluar. Berikut adalah 2 halaman menu master barang admin pada Gambar dibawah ini :
+          Berikut adalah 2 desain halaman transaksi masuk dan keluar pada Gambar dibawah ini :
         </p>
         <p>Desain Tampilan Halaman Transaksi Menu Barang Masuk</p>
         <div class="col-md-8 mb-2">
@@ -445,7 +442,7 @@
 
         <!--Desain Admin Menu Laporan-->
         <p>E.	Desain Tampilan Halaman  Menu Laporan Admin<br>
-          Tampilan Halaman pada menu Laporan terdapat halaman barang masuk dan Keluar. Halaman ini untuk melihat laporan data barang masuk dan keluar dengan mencari datanya atau dengan tanggal. Serta dapat mencetak data laporan barang masuk dan keluar ke dalam pdf. Berikut Gambar halaman laporan barang masuk dan keluar :
+          Berikut Gambar desain halaman laporan barang masuk dan keluar :
         </p>
         <p>Desain Tampilan Halaman Laporan Menu Barang Masuk</p>
         <div class="col-md-8 mb-2">
@@ -458,8 +455,7 @@
         </div>
 
         <!--Desain Admin Menu Data User-->
-        <p>F.	Desain Tampilan Halaman  Menu Data User Admin<br>
-          Berikut Tampilan Halaman pada menu Data User. Halaman ini untuk mengelola data user seperti menambah, mengubah, dan menghapus data user. Berikut Gambar halaman menu data user:
+        <p>F.	Desain Tampilan Halaman  Menu Data User Admin
         <div class="col-md-8 mb-2">
           <img src="UI/Menu-Data User.png"class="img-fluid mb-4" >
         </div>
@@ -467,7 +463,7 @@
         <!--Desain Petugas Gudang-->
         <p>3.	Tampilan Halaman Petugas Gudang<br>
           <!--Home - Petugas Gudang-->
-          Desain Tampilan Halaman Home atau Dashboard Petugas Gudang
+          Desain Tampilan Halaman Home atau Dashboard Petugas Gudang<br>
           Berikut Gambar halaman Home atau Dashboard :
         </p>
         <div class="col-md-8 mb-2">
@@ -482,6 +478,598 @@
         <div class="col-md-8 mb-2">
           <img src="UI/Home – Pemilik.png"class="img-fluid mb-4" >
         </div>
+      </div>
+
+      <br>
+      
+      <!--Implementasi-->
+      <h5><b>3.3 Implementasi (Code)</b></h5>
+      <div class="text-justify">
+        <p style="text-indent: 0.35in;">Pada tahap ini setelah rencana dibuat, dimulai menulis kode yang dibutuhkan untuk membuat sistem. Berikut ini hasil implementasi serta kode program untuk membangun sistem informasi persediaan barang berbasis web ini dan tampilan dari halaman web dari sistem informasi yang dibuat :</p>
+  
+        <!-- Login -->
+        <p>1.	Halaman Login<br>
+          Berikut potongan kode program back-end dari halaman login :
+        </p>
+        <div class="col-md-8 mb-2">
+          <img src="Implementasi/1codelogin.png"class="img-fluid mb-4" >
+        </div>
+        <p>Halaman login merupakan halaman yang digunakan untuk login ke sistem, pada saat login terdapat 3 level user yang setiap level akses dan tampilan halaman berbeda. Jika username dan password di ketik dengan benar maka akan masuk kedalam sistem. Berikut hasil implementasi tampilan halaman login : </p>
+        <div class="col-md-8 mb-2">
+          <img src="Implementasi/login.png"class="img-fluid mb-4" >
+        </div>
+
+        <!--Tampilan halaman akases sbg Admin-->
+        <p>2.	Tampilan Halaman akses sebagai Admin<br>
+          <!--Home - Admin-->
+          A.	Halaman Dashboard (Home)<br>
+          Berikut potongan kode program back-end dari halaman Dashboard :
+        </p>
+        <div class="col-md-8 mb-2">
+          <img src="Implementasi/2codehome.png"class="img-fluid mb-4" >
+        </div>
+        <p>Halaman Dashboard admin gudang merupakan halaman yang muncul ketika level user admin sukses masuk kedalam sistem. Halaman ini menampilkan menu dan informasi barang yang dibutuhkan level user admin, Berikut adalah hasil implementasi halaman utama pada Gambar dibawah ini :</p>
+
+        <div class="col-md-8 mb-2">
+          <img src="Implementasi/home.png"class="img-fluid mb-4" >
+        </div>
+        
+        <!--Supplier-->
+        <p>B.	Desain Tampilan Halaman Supplier Admin<br>
+          Berikut potongan kode program back-end dari halaman Supplier:
+        </p>
+        <div class="col-md-8 mb-2">
+          <img src="Implementasi/3codesupplier.png"class="img-fluid mb-4" >
+        </div>
+        <p>Halaman ini berfungsi mengelola data supplier seperti menambah, menghapus, dan mengubah data. Berikut adalah hasil implementasi halaman supplier pada Gambar dibawah ini :</p>
+
+        <div class="col-md-8 mb-2">
+          <img src="Implementasi/supplier.png"class="img-fluid mb-4" >
+        </div>
+
+        <!--Admin Master Barang --->
+        <p>C.	Halaman  Menu Master Barang<br>
+          Pada Menu Master Barang terdapat 3 Halaman yaitu Data Barang, Jenis Barang, dan Satuan Barang. Halaman tersebut untuk mengelola data-data barang produk kaos termasuk pada satuan barang dan jenis barang. Pada bagian halaman barang Ketika di klik satu produk barang maka akan menampilkan detail data barang. Berikut adalah  3 halaman menu master barang admin dan juga detail barang pada Gambar dibawah ini :</p>
+
+        <p>Berikut potongan kode program back-end dari halaman Menu Master Barang – Data Barang :</p>
+        <div class="col-md-8 mb-2">
+          <img src="Implementasi/4codedatabarang.png"class="img-fluid mb-4" >
+        </div>
+        <p>Berikut adalah hasil implementasi halaman Menu Master Barang – Data Barang pada Gambar dibawah ini :</p>
+        <div class="col-md-8 mb-2">
+          <img src="Implementasi/barang.png"class="img-fluid mb-4" >
+        </div>
+
+        <p>Berikut potongan kode program back-end dari halaman Menu Master Barang – Data Satuan :</p>
+        <div class="col-md-8 mb-2">
+          <img src="Implementasi/5codedatasatuan.png"class="img-fluid mb-4" >
+        </div>
+        <p>Berikut adalah hasil implementasi halaman Menu Master Barang – Data Satuan pada Gambar dibawah ini :</p>
+        <div class="col-md-8 mb-2">
+          <img src="Implementasi/satuan.png"class="img-fluid mb-4" >
+        </div>
+
+        <p>Berikut potongan kode program back-end dari halaman Menu Master Barang – Data Barang :</p>
+        <div class="col-md-8 mb-2">
+          <img src="Implementasi/4codedatabarang.png"class="img-fluid mb-4" >
+        </div>
+        <p>Berikut adalah hasil implementasi halaman Menu Master Barang – Data Barang pada Gambar dibawah ini :</p>
+        <div class="col-md-8 mb-2">
+          <img src="Implementasi/barang.png"class="img-fluid mb-4" >
+        </div>
+
+        <p>Berikut potongan kode program back-end dari halaman Menu Master Barang – Data Jenis :</p>
+        <div class="col-md-8 mb-2">
+          <img src="Implementasi/6codedatajenis.png"class="img-fluid mb-4" >
+        </div>
+        <p>Berikut adalah hasil implementasi halaman Menu Master Barang – Data Jenis pada Gambar dibawah ini :</p>
+        <div class="col-md-8 mb-2">
+          <img src="Implementasi/jenis.png"class="img-fluid mb-4" >
+        </div>
+
+        <p>Berikut potongan kode program dari halaman Menu Master Barang – Data Barang – Detail Barang :</p>
+        <div class="col-md-8 mb-2">
+          <img src="Implementasi/7codedetailbarang.png"class="img-fluid mb-4" >
+        </div>
+        <p>Berikut adalah hasil implementasi halaman Menu Master Barang – Data Barang – Detail Barang pada Gambar dibawah ini :</p>
+        <div class="col-md-8 mb-2">
+          <img src="Implementasi/detailbarang.png"class="img-fluid mb-4" >
+        </div>
+
+        <br>
+
+        <!--Desain Admin Menu Transaksi-->
+        <p>D.	Desain Tampilan Halaman  Menu Transaksi Admin<br>
+          Pada Menu Transaksi terdapat 2 Halaman yaitu Barang Masuk dan Barang Keluar. Halaman ini untuk mengelola data barang masuk dan keluar.
+        </p>
+        <p>Berikut potongan kode program back-end dari Halaman Menu Transaksi Barang Masuk :</p>
+        <div class="col-md-8 mb-2">
+          <img src="Implementasi/8codetransaksibarangmasuk.png"class="img-fluid mb-4" >
+        </div>
+        <p>Berikut adalah hasil implementasi Halaman Menu Transaksi Barang Masuk pada Gambar dibawah ini :</p>
+        <div class="col-md-8 mb-2">
+          <img src="Implementasi/transaksibarangmasuk.png"class="img-fluid mb-4" >
+        </div>
+
+        <p>Berikut potongan kode program back-end dari Halaman Menu Transaksi Barang Keluar :</p>
+        <div class="col-md-8 mb-2">
+          <img src="Implementasi/9codetransaksibarangkeluar.png"class="img-fluid mb-4" >
+        </div>
+        <p>Berikut adalah hasil implementasi Halaman Menu Transaksi Barang Keluar pada Gambar dibawah ini :</p>
+        <div class="col-md-8 mb-2">
+          <img src="Implementasi/transaksibarangkeluar.png"class="img-fluid mb-4" >
+        </div>
+
+        <br>
+
+        <!--Desain Admin Menu Laporan-->
+        <p>E.	Halaman  Menu Laporan<br>
+          Halaman ini untuk melihat laporan data barang masuk dan keluar dengan mencari datanya atau dengan tanggal. Serta dapat mencetak data laporan barang masuk dan keluar ke dalam pdf.
+        </p>
+
+        <p>Berikut potongan kode program back-end dari Halaman Laporan Barang Masuk :</p>
+        <div class="col-md-8 mb-2">
+          <img src="Implementasi/10codelaporanbarangmasuk.png"class="img-fluid mb-4" >
+        </div>
+        <p>Berikut adalah hasil implementasi Halaman Menu Laporan Barang Masuk pada Gambar dibawah ini :</p>
+        <div class="col-md-8 mb-2">
+          <img src="Implementasi/laporanbarangmasuk.png"class="img-fluid mb-4" >
+        </div>
+
+        <p>Berikut potongan kode program back-end dari Halaman Laporan Barang Keluar :</p>
+        <div class="col-md-8 mb-2">
+          <img src="Implementasi/11codelaporanbarangkeluar.png"class="img-fluid mb-4" >
+        </div>
+        <p>Berikut adalah hasil implementasi Halaman Menu Laporan Barang Keluar pada Gambar dibawah ini :</p>
+        <div class="col-md-8 mb-2">
+          <img src="Implementasi/laporanbarangkeluar.png"class="img-fluid mb-4" >
+        </div>
+        
+        <!--Desain Admin Menu Data User-->
+        <p>F.	Halaman  Menu Data User<br>
+        <p>Halaman ini untuk mengelola data user seperti menambah, mengubah, dan menghapus data user. Berikut Gambar halaman menu data user:</p>
+
+        <p>Berikut potongan kode program back-end dari Halaman Menu Data User:</p>
+        <div class="col-md-8 mb-2">
+          <img src="Implementasi/12codedatauser.png"class="img-fluid mb-4" >
+        </div>
+        <p>Berikut adalah hasil implementasi Halaman Menu Data User pada Gambar dibawah ini :</p>
+        <div class="col-md-8 mb-2">
+          <img src="Implementasi/datauser.png"class="img-fluid mb-4" >
+        </div>
+      </div>
+
+      <!--Pengujian-->
+      <h5><b>3.4	Pengujian <i>(Testing)</i></b></h5>
+      <div class="text-justify">
+        <p style="text-indent: 0.35in;">Pada tahapan ini, akan dilakukan pengujian sistem dengan menggunakan Black Box. Pengujian ini Memperhatikan masukan kedalam sistem dan keluaran dari masukan tersebut. Berikut ini merupakan hasil pengujian yang dilakukan pada sistem informasi persediaan barang pada PT. Konveksi Jaya :</p>
+
+        <p>1. Login</p>
+        <div class="container">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Rancangan Proses</th>
+                <th scope="col">Hasil Yang Diharapkan</th>
+                <th scope="col">Hasil</th>
+                <th scope="col">Keterangan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1.</td>
+                <td>Form login dan klik tombol login jika username dan password valid</td>
+                <td>Muncul Notif Login Berhasil dan Masuk kehalaman home sesuai hak akses akun user</td>
+                <td>Sukses</td>
+                <td>Jika input benar</td>
+             </tr>
+            <tr>   
+              <td>2.</td>
+              <td>Form login dan klik tombol login jika username dan password tidak valid</td>
+              <td>Muncul Notif Login “User & Password Salah!” dan Tetap dihalaman login</td>
+              <td>Sukses</td>
+              <td>Jika input salah</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+       
+        <p>2.	Data Supplier</p>
+        <div class="container">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Rancangan Proses</th>
+                <th scope="col">Hasil Yang Diharapkan</th>
+                <th scope="col">Hasil</th>
+                <th scope="col">Keterangan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1.</td>
+                <td>Klik menu supplier</td>
+                <td>Tampil Halaman data supplier</td>
+                <td>Sukses</td>
+                <td>Tampil Halaman data supplier</td>
+             </tr>
+            <tr>   
+              <td>2.</td>
+              <td>Klik tombol tambah data</td>
+              <td>Tampil modal dialog form tambah data supplier</td>
+              <td>Sukses</td>
+              <td>Tampil modal dialog form tambah data supplier</td>
+            </tr>
+            <tr>   
+              <td>3.</td>
+              <td>Klik tombol edit </td>
+              <td>Tampil modal dialog form edit data supplier</td>
+              <td>Sukses</td>
+              <td>Tampil modal dialog form edit supplier</td>
+            </tr>
+            <tr>   
+              <td>4.</td>
+              <td>Klik tombol hapus </td>
+              <td>Tampil modal dialog konfirmasi hapus supplier</td>
+              <td>Sukses</td>
+              <td>Tampil modal dialog konfirmasi hapus supplier</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+        <p>3.	Master Barang (Barang, Satuan, Jenis dan detail barang)<br>
+          a.	Menu Data Barang</p>
+        <div class="container">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Rancangan Proses</th>
+                <th scope="col">Hasil Yang Diharapkan</th>
+                <th scope="col">Hasil</th>
+                <th scope="col">Keterangan</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>1.</td>
+              <td>Klik menu data barang</td>
+              <td>Tampil Halaman data barang</td>
+              <td>Sukses</td>
+              <td>Tampil Halaman data barang</td>
+            </tr>
+            <tr>   
+              <td>2.</td>
+              <td>Klik tombol tambah data</td>
+              <td>Tampil modal dialog form tambah data barang</td>
+              <td>Sukses</td>
+              <td>Tampil modal dialog form tambah data barang</td>
+            </tr>
+            <tr>   
+              <td>3.</td>
+              <td>Klik tombol edit </td>
+              <td>TTampil modal dialog form edit barang</td>
+              <td>Sukses</td>
+              <td>Tampil modal dialog form edit barang</td>
+            </tr>
+            <tr>   
+              <td>4.</td>
+              <td>Klik tombol hapus </td>
+              <td>Tampil modal dialog konfirmasi hapus barang</td>
+              <td>Sukses</td>
+              <td>Tampil modal dialog konfirmasi hapus barang</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>b.	Menu Satuan Barang</p>
+        <div class="container">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Rancangan Proses</th>
+                <th scope="col">Hasil Yang Diharapkan</th>
+                <th scope="col">Hasil</th>
+                <th scope="col">Keterangan</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>1.</td>
+              <td>Klik menu satuan barang</td>
+              <td>Tampil Halaman data satuan barang</td>
+              <td>Sukses</td>
+              <td>Tampil Halaman data satuan barang</td>
+            </tr>
+            <tr>   
+              <td>2.</td>
+              <td>Klik tombol tambah data</td>
+              <td>Tampil modal dialog form tambah data satuan barang</td>
+              <td>Sukses</td>
+              <td>Tampil modal dialog form tambah data satuan barang</td>
+            </tr>
+            <tr>   
+              <td>3.</td>
+              <td>Klik tombol edit </td>
+              <td>Tampil modal dialog form edit satuan barang</td>
+              <td>Sukses</td>
+              <td>Tampil modal dialog form edit satuan barang</td>
+            </tr>
+            <tr>   
+              <td>4.</td>
+              <td>Klik tombol hapus </td>
+              <td>Tampil modal dialog konfirmasi hapus satuan barang</td>
+              <td>Sukses</td>
+              <td>Tampil modal dialog konfirmasi hapus satuan barang</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>c.	Menu Jenis Barang</p>
+        <div class="container">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Rancangan Proses</th>
+                <th scope="col">Hasil Yang Diharapkan</th>
+                <th scope="col">Hasil</th>
+                <th scope="col">Keterangan</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>1.</td>
+              <td>Klik menu jenis barang</td>
+              <td>Tampil Halaman data jenis barang</td>
+              <td>Sukses</td>
+              <td>Tampil Halaman data jenis barang</td>
+            </tr>
+            <tr>   
+              <td>2.</td>
+              <td>Klik tombol tambah data</td>
+              <td>Tampil modal dialog form tambah data jenis barang</td>
+              <td>Sukses</td>
+              <td>Tampil modal dialog form tambah data jenis barang</td>
+            </tr>
+            <tr>   
+              <td>3.</td>
+              <td>Klik tombol edit </td>
+              <td>Tampil modal dialog form edit jenis barang</td>
+              <td>Sukses</td>
+              <td>Tampil modal dialog form edit jenis barang</td>
+            </tr>
+            <tr>   
+              <td>4.</td>
+              <td>Klik tombol hapus </td>
+              <td>Tampil modal dialog konfirmasi hapus jenis barang</td>
+              <td>Sukses</td>
+              <td>Tampil modal dialog konfirmasi hapus jenis barang</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>d.	Detail Barang</p>
+        <div class="container">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Rancangan Proses</th>
+                <th scope="col">Hasil Yang Diharapkan</th>
+                <th scope="col">Hasil</th>
+                <th scope="col">Keterangan</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>1.</td>
+              <td>Klik Barang pada menu data barang</td>
+              <td>Tampil Halaman data detail barang</td>
+              <td>Sukses</td>
+              <td>Tampil Halaman data detail barang</td>
+            </tr>
+            <tr>   
+              <td>2.</td>
+              <td>Klik tombol back</td>
+              <td>Kembali ke Halaman menu data barang</td>
+              <td>Sukses</td>
+              <td>Kembali ke Halaman menu data barang</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>4.	Transaksi<br>
+          a.	Menu Transaksi Barang Masuk</p>
+        <div class="container">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Rancangan Proses</th>
+                <th scope="col">Hasil Yang Diharapkan</th>
+                <th scope="col">Hasil</th>
+                <th scope="col">Keterangan</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>1.</td>
+              <td>Klik menu transaksi barang masuk</td>
+              <td>Tampil Halaman data transaksi barang masuk</td>
+              <td>Sukses</td>
+              <td>Tampil Halaman data transaksi barang masuk</td>
+            </tr>
+            <tr>   
+              <td>2.</td>
+              <td>Klik tombol tambah data</td>
+              <td>Tampil modal dialog form tambah data transaksi barang masuk</td>
+              <td>Sukses</td>
+              <td>Tampil modal dialog form tambah data transaksi barang masuk</td>
+            </tr>
+            <tr>   
+              <td>3.</td>
+              <td>Klik tombol edit </td>
+              <td>Tampil modal dialog form edit transaksi barang masuk</td>
+              <td>Sukses</td>
+              <td>Tampil modal dialog form edit transaksi barang masuk</td>
+            </tr>
+            <tr>   
+              <td>4.</td>
+              <td>Klik tombol hapus </td>
+              <td>Tampil modal dialog konfirmasi hapus transaksi barang masuk</td>
+              <td>Sukses</td>
+              <td>Tampil modal dialog konfirmasi hapus transaksi barang masuk</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>b.	Menu Transaksi Barang Keluar</p>
+        <div class="container">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Rancangan Proses</th>
+                <th scope="col">Hasil Yang Diharapkan</th>
+                <th scope="col">Hasil</th>
+                <th scope="col">Keterangan</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>1.</td>
+              <td>Klik menu transaksi barang keluar</td>
+              <td>Tampil Halaman data transaksi barang keluar</td>
+              <td>Sukses</td>
+              <td>Tampil Halaman data transaksi barang keluar</td>
+            </tr>
+            <tr>   
+              <td>2.</td>
+              <td>Klik tombol tambah data</td>
+              <td>Tampil modal dialog form tambah data transaksi barang keluar</td>
+              <td>Sukses</td>
+              <td>Tampil modal dialog form tambah data transaksi barang keluar</td>
+            </tr>
+            <tr>   
+              <td>3.</td>
+              <td>Klik tombol edit </td>
+              <td>Tampil modal dialog form edit transaksi barang keluar</td>
+              <td>Sukses</td>
+              <td>Tampil modal dialog form edit transaksi barang keluar</td>
+            </tr>
+            <tr>   
+              <td>4.</td>
+              <td>Klik tombol hapus </td>
+              <td>Tampil modal dialog konfirmasi hapus transaksi barang keluar</td>
+              <td>Sukses</td>
+              <td>Tampil modal dialog konfirmasi hapus transaksi barang keluar</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>5.	Laporan<br>
+          a.	Laporan Barang Masuk</p>
+        <div class="container">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Rancangan Proses</th>
+                <th scope="col">Hasil Yang Diharapkan</th>
+                <th scope="col">Hasil</th>
+                <th scope="col">Keterangan</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>1.</td>
+              <td>Klik menu laporan barang masuk</td>
+              <td>Tampil Halaman data laporan barang masuk</td>
+              <td>Sukses</td>
+              <td>Tampil Halaman data laporan barang masuk</td>
+            </tr>
+            <tr>   
+              <td>2.</td>
+              <td>Klik tombol Filter</td>
+              <td>Menampilkan data laporan barang masuk sesuai tanggal yang ditentukan</td>
+              <td>Sukses</td>
+              <td>Menampilkan data laporan barang masuk sesuai tanggal yang ditentukan</td>
+            </tr>
+            <tr>   
+              <td>3.</td>
+              <td>Klik tombol Reset</td>
+              <td>Mereset data yang di tampilkan pada halaman</td>
+              <td>Sukses</td>
+              <td>Mereset data yang di tampilkan pada halaman</td>
+            </tr>
+            <tr>   
+              <td>4.</td>
+              <td>Klik Cetak Pdf</td>
+              <td>Mencetak Laporan ke dalam bentuk file pdf lalu file akan terdownload</td>
+              <td>Sukses</td>
+              <td>Mencetak Laporan ke dalam bentuk file pdf lalu file akan terdownload</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>b.	Menu Transaksi Barang Keluar</p>
+        <div class="container">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Rancangan Proses</th>
+                <th scope="col">Hasil Yang Diharapkan</th>
+                <th scope="col">Hasil</th>
+                <th scope="col">Keterangan</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>1.</td>
+              <td>Klik menu laporan barang keluar</td>
+              <td>Tampil Halaman data laporan barang keluar</td>
+              <td>Sukses</td>
+              <td>Tampil Halaman data laporan barang keluar</td>
+            </tr>
+            <tr>   
+              <td>2.</td>
+              <td>Klik tombol Filter </td>
+              <td>Menampilkan data laporan barang masuk sesuai tanggal yang ditentukan</td>
+              <td>Sukses</td>
+              <td>Menampilkan data laporan barang masuk sesuai tanggal yang ditentukan</td>
+            </tr>
+            <tr>   
+              <td>3.</td>
+              <td>Klik tombol Reset</td>
+              <td>Mereset data yang di tampilkan pada halaman</td>
+              <td>Sukses</td>
+              <td>Mereset data yang di tampilkan pada halaman</td>
+            </tr>
+            <tr>   
+              <td>4.</td>
+              <td>Klik Cetak Pdf </td>
+              <td>Mencetak Laporan ke dalam bentuk file pdf lalu file akan terdownload</td>
+              <td>Sukses</td>
+              <td>Mencetak Laporan ke dalam bentuk file pdf lalu file akan terdownload</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <br>
       </div>
     </div>
 
